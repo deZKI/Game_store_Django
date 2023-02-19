@@ -1,0 +1,199 @@
+{% extends 'games/base.html' %}
+{% load static %}
+{% block content %}
+    <main class="main">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Games</li>
+                </ol>
+            </nav>
+
+            <div class="row">
+                <div class="col-lg-9">
+                    <nav class="toolbox">
+                        <div class="toolbox-left">
+                            <div class="toolbox-item toolbox-sort">
+                                <div class="select-custom">
+                                    <select name="orderby" class="form-control">
+                                        <option value="menu_order" selected="selected">Default sorting</option>
+                                        <option value="popularity">Sort by popularity</option>
+                                        <option value="rating">Sort by average rating</option>
+                                        <option value="date">Sort by newness</option>
+                                        <option value="price">Sort by price: low to high</option>
+                                        <option value="price-desc">Sort by price: high to low</option>
+                                    </select>
+                                </div><!-- End .select-custom -->
+
+                                <a href="#" class="sorter-btn" title="Set Ascending Direction"><span class="sr-only">Set Ascending Direction</span></a>
+                            </div><!-- End .toolbox-item -->
+                        </div><!-- End .toolbox-left -->
+
+                        <div class="toolbox-item toolbox-show">
+                            <label>Showing 1–9 of 60 results</label>
+                        </div><!-- End .toolbox-item -->
+
+                        <div class="layout-modes">
+                            <a href="category.html" class="layout-btn btn-grid active" title="Grid">
+                                <i class="icon-mode-grid"></i>
+                            </a>
+                            <a href="category-list.html" class="layout-btn btn-list" title="List">
+                                <i class="icon-mode-list"></i>
+                            </a>
+                        </div><!-- End .layout-modes -->
+                    </nav>
+
+                    <div class="row row-sm product-ajax-grid">
+                        {% for game in object_list %}
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <div class="product-default inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="{{ game.get_absolute_url }}">
+
+                                            <img src="{{ game.images.all.first.image.url }}">
+                                        </a>
+                                        <div class="btn-icon-group">
+                                            <button class="btn-icon btn-add-cart" data-toggle="modal"
+                                                    data-target="#addCartModal"><i class="icon-bag"></i></button>
+                                        </div>
+                                        <a href="{% static '/ajax/product-quick-view.html' %}" class="btn-quickview"
+                                           title="Quick View">Quick View</a>
+                                    </figure>
+                                    <div class="product-details">
+                                        <h2 class="product-title">
+                                            <a href="{{ game.get_absolute_url }}">{{ game.name }}</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings"
+                                                      style="width:100%">{{ game.average_rating }}</span>
+                                                <!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div><!-- End .product-ratings -->
+                                        </div><!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">{{ game.price }}</span>
+                                        </div><!-- End .price-box -->
+                                    </div><!-- End .product-details -->
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div><!-- End .row -->
+
+                    <div class="col-12 text-center loadmore mb-2">
+                        <a href="#" class="btn btn-block btn-outline">Load More ...</a>
+                    </div>
+
+                    <nav class="toolbox toolbox-pagination">
+                        <div class="toolbox-item toolbox-show">
+                            <label>Showing 1–9 of 60 results</label>
+                        </div><!-- End .toolbox-item -->
+
+                    {% if is_paginated %}
+                        <ul class="pagination">
+                         {% if page_obj.has_previous %}
+                            <li class="page-item disabled">
+                                <a class="page-link page-link-btn" href="?page={{ page_obj.previous_page_number }}}"><i class="icon-angle-left"></i></a>
+                            </li>
+                        {% endif %}
+                            {% if page_obj.has_other_pages %}
+                                {% for page in paginator.page_range %}
+                                    {% if page_obj.number == page %}
+                                <li class="page-item active">
+                                    <a class="page-link" href="?page={{ page }}">{{ page }}<span class="sr-only">(current)</span></a>
+                                </li>
+                                    {% elif page >= page_obj.number|add:-1 and page <= page_obj.number|add:1 %}
+                                <li class="page-item"><a class="page-link" href="?page={{ page }}">{{ page }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                             {% endif %}
+                           {% if page_obj.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link page-link-btn" href="?page={{ page_obj.next_page_number }}"><i class="icon-angle-right"></i></a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                    {% endif %}
+                </div><!-- End .col-lg-9 -->
+
+                <aside class="sidebar-shop col-lg-3 order-lg-first">
+                    <div class="sidebar-wrapper">
+
+                        <div class="widget">
+                            <h3 class="widget-title">
+                                <a data-toggle="collapse" href="#widget-body-2" role="button" aria-expanded="true"
+                                   aria-controls="widget-body-2">Genre</a>
+                            </h3>
+
+                            <div class="collapse show" id="widget-body-2">
+                                <div class="widget-body">
+                                    <ul class="cat-list">
+                                        {% for genre in genres %}
+                                            <li>
+                                                <input type="checkbox" class="checked">
+                                                <span>{{ genre.name }}</span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div><!-- End .widget-body -->
+                            </div><!-- End .collapse -->
+                        </div><!-- End .widget -->
+
+                        <div class="widget">
+                            <h3 class="widget-title">
+                                <a data-toggle="collapse" href="#widget-body-4" role="button" aria-expanded="true"
+                                   aria-controls="widget-body-4">Tags</a>
+                            </h3>
+
+                            <div class="collapse show" id="widget-body-4">
+                                <div class="widget-body">
+                                    <ul class="cat-list">
+                                        {% for tag in tags %}
+                                            <li>
+                                                <input type="checkbox" class="checked">
+                                                <span>{{ tag.name }}</span>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div><!-- End .widget-body -->
+                            </div><!-- End .collapse -->
+                        </div><!-- End .widget -->
+
+                        <div class="widget">
+                            <h3 class="widget-title">
+                                <a data-toggle="collapse" href="#widget-body-3" role="button" aria-expanded="true"
+                                   aria-controls="widget-body-3">Price</a>
+                            </h3>
+
+                            <div class="collapse show" id="widget-body-3">
+                                <div class="widget-body">
+                                    <form action="#">
+                                        <div class="price-slider-wrapper">
+                                            <div id="price-slider"></div><!-- End #price-slider -->
+                                        </div><!-- End .price-slider-wrapper -->
+
+                                        <div class="filter-price-action">
+                                            <button type="submit" class="btn btn-primary">Filter</button>
+
+                                            <div class="filter-price-text">
+                                                Price:
+                                                <span id="filter-price-range"></span>
+                                            </div><!-- End .filter-price-text -->
+                                        </div><!-- End .filter-price-action -->
+                                    </form>
+                                </div><!-- End .widget-body -->
+                            </div><!-- End .collapse -->
+                        </div><!-- End .widget -->
+
+
+                    </div><!-- End .sidebar-wrapper -->
+                </aside><!-- End .col-lg-3 -->
+            </div><!-- End .row -->
+        </div><!-- End .container -->
+    </main><!-- End .main -->
+{% endblock %}
+{% block js_scripts %}
+    <script src="{% static 'assets/js/nouislider.min.js' %}"></script>
+{% endblock %}
