@@ -21,7 +21,7 @@ class GameGenre(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return f'/catalog/genre/{self.slug}'
+        return f'/catalog/filter/?genre={self.slug}'
 
     class Meta:
         verbose_name = "Жанр"
@@ -58,7 +58,7 @@ class Tag(models.Model):
     published = models.BooleanField("Отображать?", default=True)
 
     def get_absolute_url(self):
-        return f'/catalog/tag/{self.slug}'
+        return f'/catalog/filter/?tag={self.slug}'
 
     def __str__(self):
         return self.name
@@ -83,8 +83,8 @@ class Game(models.Model):
                                   verbose_name='Издатель')
     release_date = models.DateField(verbose_name='Дата выхода')
     age_limit = models.CharField(max_length=70, choices=Russian_system_of_age_ratings, verbose_name='Возрастной ценз')
-
     draft = models.BooleanField(default=True, verbose_name='Готов?')
+
     def __str__(self):
         return self.name
 

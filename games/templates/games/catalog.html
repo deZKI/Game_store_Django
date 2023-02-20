@@ -29,19 +29,6 @@
                                 <a href="#" class="sorter-btn" title="Set Ascending Direction"><span class="sr-only">Set Ascending Direction</span></a>
                             </div><!-- End .toolbox-item -->
                         </div><!-- End .toolbox-left -->
-
-                        <div class="toolbox-item toolbox-show">
-                            <label>Showing 1–9 of 60 results</label>
-                        </div><!-- End .toolbox-item -->
-
-                        <div class="layout-modes">
-                            <a href="category.html" class="layout-btn btn-grid active" title="Grid">
-                                <i class="icon-mode-grid"></i>
-                            </a>
-                            <a href="category-list.html" class="layout-btn btn-list" title="List">
-                                <i class="icon-mode-list"></i>
-                            </a>
-                        </div><!-- End .layout-modes -->
                     </nav>
 
                     <div class="row row-sm product-ajax-grid">
@@ -86,9 +73,7 @@
                     </div>
 
                     <nav class="toolbox toolbox-pagination">
-                        <div class="toolbox-item toolbox-show">
-                            <label>Showing 1–9 of 60 results</label>
-                        </div><!-- End .toolbox-item -->
+
 
                     {% if is_paginated %}
                         <ul class="pagination">
@@ -117,8 +102,8 @@
                     </nav>
                     {% endif %}
                 </div><!-- End .col-lg-9 -->
-
                 <aside class="sidebar-shop col-lg-3 order-lg-first">
+                <form action="{% url 'games:json_filter' %}" method="get" name="filter">
                     <div class="sidebar-wrapper">
 
                         <div class="widget">
@@ -132,7 +117,7 @@
                                     <ul class="cat-list">
                                         {% for genre in genres %}
                                             <li>
-                                                <input type="checkbox" class="checked">
+                                                <input type="checkbox" class="checked" name="genre" value="{{ genre.slug }}">
                                                 <span>{{ genre.name }}</span>
                                             </li>
                                         {% endfor %}
@@ -152,7 +137,7 @@
                                     <ul class="cat-list">
                                         {% for tag in tags %}
                                             <li>
-                                                <input type="checkbox" class="checked">
+                                                <input type="checkbox" class="checked" name="tag" value="{{ tag.slug }}">
                                                 <span>{{ tag.name }}</span>
                                             </li>
                                         {% endfor %}
@@ -169,31 +154,35 @@
 
                             <div class="collapse show" id="widget-body-3">
                                 <div class="widget-body">
-                                    <form action="#">
                                         <div class="price-slider-wrapper">
                                             <div id="price-slider"></div><!-- End #price-slider -->
                                         </div><!-- End .price-slider-wrapper -->
 
                                         <div class="filter-price-action">
-                                            <button type="submit" class="btn btn-primary">Filter</button>
 
                                             <div class="filter-price-text">
                                                 Price:
                                                 <span id="filter-price-range"></span>
                                             </div><!-- End .filter-price-text -->
                                         </div><!-- End .filter-price-action -->
-                                    </form>
+
                                 </div><!-- End .widget-body -->
                             </div><!-- End .collapse -->
                         </div><!-- End .widget -->
 
 
                     </div><!-- End .sidebar-wrapper -->
-                </aside><!-- End .col-lg-3 -->
+                <button type="submit" class="btn btn-primary">Filter</button>
+                </form>
+                </aside>
+
             </div><!-- End .row -->
         </div><!-- End .container -->
     </main><!-- End .main -->
 {% endblock %}
 {% block js_scripts %}
     <script src="{% static 'assets/js/nouislider.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <script src="http://twitter.github.io/hogan.js/builds/3.0.1/hogan-3.0.1.js"></script>
 {% endblock %}
