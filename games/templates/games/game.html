@@ -5,8 +5,9 @@
             <div class="container">
                 <nav aria-label="breadcrumb" class="breadcrumb-nav" style="border-top: none">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Product</li>
+                        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'games:catalog' %}">Catalog</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ game.name }}</li>
                     </ol>
                 </nav>
 
@@ -16,6 +17,9 @@
                             <div class="product-single-gallery">
                                 <div class="product-slider-container product-item">
                                     <div class="product-single-carousel owl-carousel owl-theme">
+                                         <div class="product-item">
+                                            <img class="product-single-image" src={{ game.main_image.url }} />
+                                        </div>
                                         {% for image in game.images.all %}
                                         <div class="product-item">
                                             <img class="product-single-image" src={{ image.image.url }} />
@@ -28,11 +32,14 @@
                                     </span>
                                 </div>
                                 <div class="prod-thumbnail row owl-dots" id='carousel-custom-dots'>
+                                        <div class="col-3 owl-dot">
+                                            <img class="product-single-image" src={{ game.main_image.url }} />
+                                        </div>
                                      {% for image in game.images.all %}
                                         <div class="col-3 owl-dot">
                                             <img class="product-single-image" src={{ image.image.url }} />
                                         </div>
-                                        {% endfor %}
+                                     {% endfor %}
                                 </div>
                             </div><!-- End .product-single-gallery -->
                         </div><!-- End .col-lg-7 -->
@@ -55,10 +62,10 @@
                                 </div><!-- End .price-box -->
 
                                 <div class="product-info-box">
-                                    <a href="#1"> <span class="product-info">Осталось: {{ game.quantity }}</span> </a>
+                                    <span class="product-info">Осталось: {{ game.quantity }}</span>
                                 </div>
                                 <div class="product-desc">
-                                    <p>{{ game.description }}<a href="#">(read more)</a></p>
+                                    <p>{{ game.description }}</p>
                                 </div><!-- End .product-desc -->
 
                                 <div class="product-info-box">
@@ -68,22 +75,22 @@
                                     </div>
                                     <div class="product-info-developer">
                                         <span class="product-info-name">Developer:</span>
-                                        <a href="#1"> <span class="product-info">{{ game.developer }}</span> </a>
+                                        <span class="product-info">{{ game.developer }}</span>
                                     </div>
                                     <div class="product-info-publisher">
                                         <span class="product-info-name">Publisher:</span>
-                                        <a href="#1"> <span class="product-info">{{ game.publisher }}</span> </a>
+                                        <span class="product-info">{{ game.publisher }}</span>
                                     </div>
                                     <div class="product-info-category">
                                         <span class="product-info-name">Tags:</span>
                                         {% for tag in game.tags.all  %}
-                                           <a href="#"> <span class="product-info"> {{ tag.name }} </span> </a>
+                                           <a href="{% url 'games:catalog' %}?tag={{ tag.slug }}"> <span class="product-info"> {{ tag.name }} </span> </a>
                                         {% endfor %}
                                     </div>
                                     <div class="product-info-category">
                                         <span class="product-info-name">Genres:</span>
                                         {% for genre in game.genres.all %}
-                                            <a href="#1"> <span class="product-info">{{ genre.name }}</span> </a>
+                                            <a href="{% url 'games:catalog' %}?genre={{ genre.slug }}"> <span class="product-info">{{ genre.name }}</span> </a>
                                         {% endfor %}
 
                                     </div>

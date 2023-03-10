@@ -9,11 +9,11 @@
     <title>{{ title }}</title>
 
     <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Bootstrap eCommerce Template">
-    <meta name="author" content="SW-THEMES">
+    <meta name="description" content="Game store">
+    <meta name="author" content="DERZKI">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{% static 'static/assets/images/icons/favicon.ico' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
 
 
     <script type="text/javascript">
@@ -41,9 +41,6 @@
             <div class="header-top">
                 <div class="container">
                     <div class="header-left">
-                        <h4>Get 10% OFF at the Porto GAMES Selection</h4>
-                        <hr class="vertical">
-                        <a href="#">Shop Now!</a>
                     </div>
 
                     <div class="header-right header-dropdowns">
@@ -76,7 +73,7 @@
                         <button class="mobile-menu-toggler" type="button">
                             <i class="icon-menu"></i>
                         </button>
-                        <a href="index.html" class="logo">
+                        <a href="{% url 'index' %}" class="logo">
                             <img src="{% static 'assets/images/logo.png'%}" alt="Porto Logo">
                         </a>
                     </div>
@@ -84,81 +81,9 @@
                         <nav class="main-nav">
                             <ul class="menu">
                                 <li>
-                                    <a href="category.html"><i class="icon-joystick font-size-lg"></i>Games</a>
-                                    <div class="megamenu megamenu-fixed-width">
-                                        <div class="row row-sm">
-                                            <div class="col-lg-4">
-                                                <a href="#" class="nolink">VARIATION 1</a>
-                                                <ul class="submenu">
-                                                    <li><a href="category.html">Fullwidth Banner</a></li>
-                                                    <li><a href="category-banner-boxed-slider.html">Boxed Slider Banner</a></li>
-                                                    <li><a href="category-banner-boxed-image.html">Boxed Image Banner</a></li>
-                                                    <li><a href="category.html">Left Sidebar</a></li>
-                                                    <li><a href="category-sidebar-right.html">Right Sidebar</a></li>
-                                                    <li><a href="category-flex-grid.html">Product Flex Grid</a></li>
-                                                    <li><a href="category-horizontal-filter1.html">Horizontal Filter1</a></li>
-                                                    <li><a href="category-horizontal-filter2.html">Horizontal Filter2</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <a href="#" class="nolink">VARIATION 2</a>
-                                                <ul class="submenu">
-                                                    <li><a href="#">Product List Item Types</a></li>
-                                                    <li><a href="category-infinite-scroll.html">Ajax Infinite Scroll</a></li>
-                                                    <li><a href="category-3col.html">3 Columns Products</a></li>
-                                                    <li><a href="category.html">4 Columns Products</a></li>
-                                                    <li><a href="category-5col.html">5 Columns Products</a></li>
-                                                    <li><a href="category-6col.html">6 Columns Products</a></li>
-                                                    <li><a href="category-7col.html">7 Columns Products</a></li>
-                                                    <li><a href="category-8col.html">8 Columns Products</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-lg-4 image-container">
-                                                <img src="{% static 'assets/images/menu-banner-2.jpg'%}" align="Menu banner">
-                                            </div>
-                                        </div>
-                                    </div><!-- End .megamenu -->
+                                    <a href="{% url 'games:catalog' %}"><i class="icon-joystick font-size-lg"></i>Catalog</a>
                                 </li>
-                                <li class="">
-                                    <a href="product.html"><i class="icon-bars"></i>Products</a>
-                                    <div class="megamenu">
-                                        <div class="row row-sm">
-                                            <div class="col-lg-3">
-                                                <a href="#" class="nolink">Variations 1</a>
-                                                <ul class="submenu">
-                                                    <li><a href="product.html">Horizontal Thumbnails</a></li>
-                                                    <li><a href="product-full-width.html">Vertical Thumbnails</a></li>
-                                                    <li><a href="product.html">Inner Zoom</a></li>
-                                                    <li><a href="product-addcart-sticky.html">Addtocart Sticky</a></li>
-                                                    <li><a href="product-sidebar-left.html">Accordion Tabs</a></li>
-                                                </ul>
-                                            </div><!-- End .col-lg-4 -->
-                                            <div class="col-lg-3">
-                                                <a href="#" class="nolink">Variations 2</a>
-                                                <ul class="submenu">
-                                                    <li><a href="product-sticky-tab.html">Sticky Tabs</a></li>
-                                                    <li><a href="product-simple.html">Simple Product</a></li>
-                                                    <li><a href="product-sidebar-left.html">With Left Sidebar</a></li>
-                                                </ul>
-                                            </div><!-- End .col-lg-4 -->
-                                            <div class="col-lg-3">
-                                                <a href="#" class="nolink">Product Layout Types</a>
-                                                <ul class="submenu">
-                                                    <li><a href="product.html">Default Layout</a></li>
-                                                    <li><a href="product-extended-layout.html">Extended Layout</a></li>
-                                                    <li><a href="product-full-width.html">Full Width Layout</a></li>
-                                                    <li><a href="product-grid-layout.html">Grid Images Layout</a></li>
-                                                    <li><a href="product-sticky-both.html">Sticky Both Side Info</a></li>
-                                                    <li><a href="product-sticky-info.html">Sticky Right Side Info</a></li>
-                                                </ul>
-                                            </div><!-- End .col-lg-4 -->
 
-                                            <div class="col-lg-3 image-container">
-                                                <img src="{% static 'assets/images/menu-banner-1.jpg'%}" alt="Menu banner" class="product-promo">
-                                            </div><!-- End .col-lg-4 -->
-                                        </div><!-- End .row -->
-                                    </div><!-- End .megamenu -->
-                                </li>
                             </ul>
                         </nav>
                     </div>

@@ -55,7 +55,6 @@ class Tag(models.Model):
         по тегам - то есть по ключевым словам"""
     name = models.CharField("Тег", max_length=50, unique=True)
     slug = models.SlugField("url", max_length=100, unique=True)
-    published = models.BooleanField("Отображать?", default=True)
 
     def get_absolute_url(self):
         return f'/catalog/filter/?tag={self.slug}'
@@ -70,9 +69,10 @@ class Tag(models.Model):
 
 class Game(models.Model):
     """Модель для создания игры """
-    name = models.CharField(max_length=100, unique=True, verbose_name='Название')
-    slug = models.SlugField(max_length=255, unique=True, db_index=True, verbose_name="URL")
-    description = models.TextField(max_length=300, verbose_name='Описание')
+    name = models.CharField(max_length=60, unique=True, verbose_name='Название')
+    slug = models.SlugField(max_length=50, unique=True, db_index=True, verbose_name="URL")
+    main_image = models.ImageField(default="image", verbose_name='Главная картинка')
+    description = models.TextField(max_length=500, verbose_name='Описание')
     price = models.DecimalField(max_digits=8, decimal_places=2, verbose_name='Цена')
     quantity = models.PositiveIntegerField(default=0, verbose_name='Количество')
     genres = models.ManyToManyField(to=GameGenre, verbose_name='Жанр')
@@ -83,7 +83,7 @@ class Game(models.Model):
                                   verbose_name='Издатель')
     release_date = models.DateField(verbose_name='Дата выхода')
     age_limit = models.CharField(max_length=70, choices=Russian_system_of_age_ratings, verbose_name='Возрастной ценз')
-    draft = models.BooleanField(default=True, verbose_name='Готов?')
+    ready = models.BooleanField(default=True, verbose_name='Готов?')
 
     def __str__(self):
         return self.name

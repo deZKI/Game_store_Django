@@ -1,0 +1,1269 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2023-02-19T08:35:49.363Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Facepunch Studios",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2023-02-19T08:36:02.970Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "Facepunch Studios",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2023-02-19T08:36:35.460Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "Выживание",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2023-02-19T08:36:51.353Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Rust",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"game image\", \"object\": \"GameImage object (7)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2023-02-19T13:20:20.844Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Rust",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0416\\u0430\\u043d\\u0440\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2023-02-20T12:58:52.832Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Call of Duty: Black Ops 3",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u043b\\u0430\\u0432\\u043d\\u0430\\u044f \\u043a\\u0430\\u0440\\u0442\\u0438\\u043d\\u043a\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2023-02-20T13:00:10.945Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Rust",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u043b\\u0430\\u0432\\u043d\\u0430\\u044f \\u043a\\u0430\\u0440\\u0442\\u0438\\u043d\\u043a\\u0430\"]}}, {\"added\": {\"name\": \"game image\", \"object\": \"GameImage object (8)\"}}, {\"added\": {\"name\": \"game image\", \"object\": \"GameImage object (9)\"}}, {\"deleted\": {\"name\": \"game image\", \"object\": \"GameImage object (None)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2023-02-20T13:00:31.018Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Call of Duty: Black Ops 2",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u043b\\u0430\\u0432\\u043d\\u0430\\u044f \\u043a\\u0430\\u0440\\u0442\\u0438\\u043d\\u043a\\u0430\"]}}, {\"deleted\": {\"name\": \"game image\", \"object\": \"GameImage object (None)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2023-02-20T15:09:32.020Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Call of Duty: Black Ops",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u043b\\u0430\\u0432\\u043d\\u0430\\u044f \\u043a\\u0430\\u0440\\u0442\\u0438\\u043d\\u043a\\u0430\"]}}, {\"deleted\": {\"name\": \"game image\", \"object\": \"GameImage object (None)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2023-02-20T15:10:41.014Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Call of Duty: Black Ops 2",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"game image\", \"object\": \"GameImage object (10)\"}}, {\"added\": {\"name\": \"game image\", \"object\": \"GameImage object (11)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2023-02-20T15:12:11.459Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "Стратегия",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2023-02-20T15:12:48.794Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "Приключенческая игра",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2023-02-20T15:13:20.931Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "Blizzard Entertainment",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2023-02-20T15:13:28.917Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Blizzard Entertainment",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2023-02-20T15:14:32.119Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Warcraft Reforged",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"game image\", \"object\": \"GameImage object (12)\"}}, {\"added\": {\"name\": \"game image\", \"object\": \"GameImage object (13)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2023-02-20T15:32:57.764Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Call of Duty: Black Ops 3",
+      "action_flag": 2,
+      "change_message": "[{\"deleted\": {\"name\": \"game image\", \"object\": \"GameImage object (None)\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2023-03-10T06:09:45.184Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Naughty Dog",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2023-03-10T06:09:58.580Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "Sony Interactive Entertainment",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2023-03-10T06:11:17.828Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "The Last of Us Remastered",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"game image\", \"object\": \"GameImage object (14)\"}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 6,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 6,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 6,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 6,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Разработчик",
+      "content_type": 7,
+      "codename": "add_developer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Разработчик",
+      "content_type": 7,
+      "codename": "change_developer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Разработчик",
+      "content_type": 7,
+      "codename": "delete_developer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Разработчик",
+      "content_type": 7,
+      "codename": "view_developer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Игра",
+      "content_type": 8,
+      "codename": "add_game"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Игра",
+      "content_type": 8,
+      "codename": "change_game"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Игра",
+      "content_type": 8,
+      "codename": "delete_game"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Игра",
+      "content_type": 8,
+      "codename": "view_game"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Жанр",
+      "content_type": 9,
+      "codename": "add_gamegenre"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Жанр",
+      "content_type": 9,
+      "codename": "change_gamegenre"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Жанр",
+      "content_type": 9,
+      "codename": "delete_gamegenre"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Жанр",
+      "content_type": 9,
+      "codename": "view_gamegenre"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add Издатель",
+      "content_type": 10,
+      "codename": "add_publisher"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change Издатель",
+      "content_type": 10,
+      "codename": "change_publisher"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete Издатель",
+      "content_type": 10,
+      "codename": "delete_publisher"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view Издатель",
+      "content_type": 10,
+      "codename": "view_publisher"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add Тег",
+      "content_type": 11,
+      "codename": "add_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change Тег",
+      "content_type": 11,
+      "codename": "change_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete Тег",
+      "content_type": 11,
+      "codename": "delete_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view Тег",
+      "content_type": 11,
+      "codename": "view_tag"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add rating",
+      "content_type": 12,
+      "codename": "add_rating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change rating",
+      "content_type": 12,
+      "codename": "change_rating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete rating",
+      "content_type": 12,
+      "codename": "delete_rating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view rating",
+      "content_type": 12,
+      "codename": "view_rating"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add game image",
+      "content_type": 13,
+      "codename": "add_gameimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change game image",
+      "content_type": 13,
+      "codename": "change_gameimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete game image",
+      "content_type": 13,
+      "codename": "delete_gameimage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view game image",
+      "content_type": 13,
+      "codename": "view_gameimage"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "users",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "games",
+      "model": "developer"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "games",
+      "model": "game"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "games",
+      "model": "gamegenre"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "games",
+      "model": "publisher"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "games",
+      "model": "tag"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "games",
+      "model": "rating"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "games",
+      "model": "gameimage"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "4m0auwlqt6olk39wvyekpamjqrtasb05",
+    "fields": {
+      "session_data": ".eJxVjMEOwiAQRP-FsyFsWYp69N5vaJZdkKqBpLQn47_bJj1oMqd5b-atRlqXPK4tzuMk6qpAnX67QPyMZQfyoHKvmmtZ5inoXdEHbXqoEl-3w_07yNTytkYUR2Kw99EmhMsWCxY6RkvEgYzz1BEgnb1BThwBgmMrIYkwc68-X9I6OGY:1paVvN:19GkmTnk3BQzn3lrsVLoVCcNuY6TP42bHpOxUtj_lhw",
+      "expire_date": "2023-03-24T06:08:17.460Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "83r0ybf7yhjv9pjuqwg5dbp48qpdwov0",
+    "fields": {
+      "session_data": ".eJxVjMEOwiAQRP-FsyFsWYp69N5vaJZdkKqBpLQn47_bJj1oMqd5b-atRlqXPK4tzuMk6qpAnX67QPyMZQfyoHKvmmtZ5inoXdEHbXqoEl-3w_07yNTytkYUR2Kw99EmhMsWCxY6RkvEgYzz1BEgnb1BThwBgmMrIYkwc68-X9I6OGY:1pV3b7:3Zw7qVxuhngyD3IolujWsg4bhegML1xfN573o9iB4wY",
+      "expire_date": "2023-03-09T04:52:49.611Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "cpj2bk10uyaav60nlswp5i4reqcjwlgm",
+    "fields": {
+      "session_data": ".eJxVjMEOwiAQRP-FsyFsWYp69N5vaJZdkKqBpLQn47_bJj1oMqd5b-atRlqXPK4tzuMk6qpAnX67QPyMZQfyoHKvmmtZ5inoXdEHbXqoEl-3w_07yNTytkYUR2Kw99EmhMsWCxY6RkvEgYzz1BEgnb1BThwBgmMrIYkwc68-X9I6OGY:1pU89r:yHuwiN1VjLInhSF9V-8wtzJxEpXr_xgvMWefBajmIMs",
+      "expire_date": "2023-03-06T15:32:51.893Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "db502tmsu06e1mljwwra43f1l4jbkrq6",
+    "fields": {
+      "session_data": ".eJxVjMEOwiAQRP-FsyFsWYp69N5vaJZdkKqBpLQn47_bJj1oMqd5b-atRlqXPK4tzuMk6qpAnX67QPyMZQfyoHKvmmtZ5inoXdEHbXqoEl-3w_07yNTytkYUR2Kw99EmhMsWCxY6RkvEgYzz1BEgnb1BThwBgmMrIYkwc68-X9I6OGY:1pTf9y:BQcHuwZzkfIqCcxwBhoSDIKGYhw1iyLfau-T9AadBak",
+      "expire_date": "2023-03-05T08:35:02.699Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "f70sooocpvsyzmjxijp5w1famaf2ffxi",
+    "fields": {
+      "session_data": ".eJxVjMEOwiAQRP-FsyFsWYp69N5vaJZdkKqBpLQn47_bJj1oMqd5b-atRlqXPK4tzuMk6qpAnX67QPyMZQfyoHKvmmtZ5inoXdEHbXqoEl-3w_07yNTytkYUR2Kw99EmhMsWCxY6RkvEgYzz1BEgnb1BThwBgmMrIYkwc68-X9I6OGY:1pU8c4:3gd8q6j-ud27OU_FxkdOLHsjvULlQnKe0jlF2Mu9RPE",
+      "expire_date": "2023-03-06T16:02:00.813Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "m647erucs2ae4zhw4ve0jhn4yetyx7de",
+    "fields": {
+      "session_data": ".eJxVjMEOwiAQRP-FsyFsWYp69N5vaJZdkKqBpLQn47_bJj1oMqd5b-atRlqXPK4tzuMk6qpAnX67QPyMZQfyoHKvmmtZ5inoXdEHbXqoEl-3w_07yNTytkYUR2Kw99EmhMsWCxY6RkvEgYzz1BEgnb1BThwBgmMrIYkwc68-X9I6OGY:1pU8gn:oXavGcl0vw0w21p4aGDk2tmah-BIaXbCNeIyVwzTLdA",
+      "expire_date": "2023-03-06T16:06:53.846Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "pgqytenyuvx37h6kfst2wmzhmmew1s0f",
+    "fields": {
+      "session_data": ".eJxVjMEOwiAQRP-FsyFsWYp69N5vaJZdkKqBpLQn47_bJj1oMqd5b-atRlqXPK4tzuMk6qpAnX67QPyMZQfyoHKvmmtZ5inoXdEHbXqoEl-3w_07yNTytkYUR2Kw99EmhMsWCxY6RkvEgYzz1BEgnb1BThwBgmMrIYkwc68-X9I6OGY:1pU2b8:4wrrdDEL8UJ6ZAGpMjcQDV8NNKyLptO39VFfa-2ES48",
+      "expire_date": "2023-03-06T09:36:38.354Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "rmvnetw74a8xcb5c1dr6cljctf6py0oh",
+    "fields": {
+      "session_data": ".eJxVjMEOwiAQRP-FsyFsWYp69N5vaJZdkKqBpLQn47_bJj1oMqd5b-atRlqXPK4tzuMk6qpAnX67QPyMZQfyoHKvmmtZ5inoXdEHbXqoEl-3w_07yNTytkYUR2Kw99EmhMsWCxY6RkvEgYzz1BEgnb1BThwBgmMrIYkwc68-X9I6OGY:1pV4JM:MI4cqXhQNKe5vtsuKKN7mo33avBxSmkFSJavDi3W9J0",
+      "expire_date": "2023-03-09T05:38:32.289Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "zu3jfrpjou2qyxef7utwgiobctvsd1jh",
+    "fields": {
+      "session_data": ".eJxVjMEOwiAQRP-FsyFsWYp69N5vaJZdkKqBpLQn47_bJj1oMqd5b-atRlqXPK4tzuMk6qpAnX67QPyMZQfyoHKvmmtZ5inoXdEHbXqoEl-3w_07yNTytkYUR2Kw99EmhMsWCxY6RkvEgYzz1BEgnb1BThwBgmMrIYkwc68-X9I6OGY:1pUi7r:TlDlmyXvDx3crAU19n5eHM3umMB8GypYXFEM6qOBnGI",
+      "expire_date": "2023-03-08T05:57:11.866Z"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$390000$h25dhZ5RAx9QIhlCYabtLe$3sWEW/Gq6rvN7MCfY78WZuKoHpxmjUzdkyWHff4uXcs=",
+      "last_login": "2023-03-10T06:08:17.441Z",
+      "is_superuser": true,
+      "username": "kirill",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-02-19T08:35:00.507Z",
+      "image": "",
+      "is_verified_email": false,
+      "email": "kirill.301522@gmail.com",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "games.gamegenre",
+    "pk": 1,
+    "fields": {
+      "name": "Экшен",
+      "slug": "action"
+    }
+  },
+  {
+    "model": "games.gamegenre",
+    "pk": 2,
+    "fields": {
+      "name": "Инди",
+      "slug": "indi"
+    }
+  },
+  {
+    "model": "games.gamegenre",
+    "pk": 3,
+    "fields": {
+      "name": "Шутер",
+      "slug": "shooter"
+    }
+  },
+  {
+    "model": "games.gamegenre",
+    "pk": 4,
+    "fields": {
+      "name": "Приключения",
+      "slug": "adventure"
+    }
+  },
+  {
+    "model": "games.gamegenre",
+    "pk": 5,
+    "fields": {
+      "name": "Выживание",
+      "slug": "survival"
+    }
+  },
+  {
+    "model": "games.gamegenre",
+    "pk": 6,
+    "fields": {
+      "name": "Стратегия",
+      "slug": "strategiya"
+    }
+  },
+  {
+    "model": "games.developer",
+    "pk": 1,
+    "fields": {
+      "name": "Treyarch"
+    }
+  },
+  {
+    "model": "games.developer",
+    "pk": 2,
+    "fields": {
+      "name": "Facepunch Studios"
+    }
+  },
+  {
+    "model": "games.developer",
+    "pk": 3,
+    "fields": {
+      "name": "Blizzard Entertainment"
+    }
+  },
+  {
+    "model": "games.developer",
+    "pk": 4,
+    "fields": {
+      "name": "Naughty Dog"
+    }
+  },
+  {
+    "model": "games.publisher",
+    "pk": 1,
+    "fields": {
+      "name": "Activision"
+    }
+  },
+  {
+    "model": "games.publisher",
+    "pk": 2,
+    "fields": {
+      "name": "Facepunch Studios"
+    }
+  },
+  {
+    "model": "games.publisher",
+    "pk": 3,
+    "fields": {
+      "name": "Blizzard Entertainment"
+    }
+  },
+  {
+    "model": "games.publisher",
+    "pk": 4,
+    "fields": {
+      "name": "Sony Interactive Entertainment"
+    }
+  },
+  {
+    "model": "games.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Для одного игрока",
+      "slug": "single-player"
+    }
+  },
+  {
+    "model": "games.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Кооператив",
+      "slug": "coop"
+    }
+  },
+  {
+    "model": "games.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Приключенческая игра",
+      "slug": "priklyuchencheskaya-igra"
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 1,
+    "fields": {
+      "name": "Call of Duty: Black Ops",
+      "slug": "call-of-duty-black-ops",
+      "main_image": "main_heZbvPP.webp",
+      "description": "Call of Duty: Black Ops предстала перед геймерами всего мира в качестве превосходного продолжения полюбившегося шутера. По своей сути каждый, кто решил купить ключ Call of Duty: Black Ops, получит в своё расположение долгожданную седьмую часть игры. Как известно, буквально каждая часть этой серии иг",
+      "price": "2000.00",
+      "quantity": 10,
+      "developer": 1,
+      "publisher": 1,
+      "release_date": "2010-04-30",
+      "age_limit": "Информация, запрещённая для распространения среди детей",
+      "ready": true,
+      "genres": [
+        1,
+        2,
+        3
+      ],
+      "tags": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 2,
+    "fields": {
+      "name": "Call of Duty: Black Ops 2",
+      "slug": "call-of-duty-black-ops-2",
+      "main_image": "Call_of_Duty_Black_Ops_2_-_boxart_PS3_LA0UFet.png",
+      "description": "Дэвид Мэйсон (позывной «Сектор»), сын Алекса Мэйсона из первой части Black Ops, ещё в детстве потерял отца и теперь ему нужно найти убийц. Кроме того, он, как боец антитеррористической группы «Морских котиков», должен победить Рауля Менендеса, главного террориста современности, лидера террористическ",
+      "price": "2550.00",
+      "quantity": 10,
+      "developer": 1,
+      "publisher": 1,
+      "release_date": "2012-05-01",
+      "age_limit": "Информация, запрещённая для распространения среди детей",
+      "ready": true,
+      "genres": [
+        2
+      ],
+      "tags": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 3,
+    "fields": {
+      "name": "Call of Duty: Black Ops 3",
+      "slug": "call-of-duty-black-ops-3",
+      "main_image": "BO3_PC_Poster_15fsyko.png",
+      "description": "Call of Duty: Black Ops III — компьютерная игра в жанре научно-фантастического трёхмерного шутера от первого лица, двенадцатая во франшизе Call of Duty и третья в сюжетной подсерии Black Ops, начинавшейся как продолжение от кампании World at War; также последняя игра во франшизе, изданная на консоля",
+      "price": "4400.00",
+      "quantity": 0,
+      "developer": 1,
+      "publisher": 1,
+      "release_date": "2015-04-09",
+      "age_limit": "Информация, запрещённая для распространения среди детей",
+      "ready": true,
+      "genres": [
+        1,
+        3
+      ],
+      "tags": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 4,
+    "fields": {
+      "name": "Rust",
+      "slug": "rust",
+      "main_image": "rust_main.jpeg",
+      "description": "Rust — компьютерная игра в жанре симулятора выживания, была создана независимой британской компанией Facepunch Studios, возглавляемой c 2014 года Гарри Ньюмэном. Игра была выпущена в раннем доступе в декабре 2013 года, 8 февраля 2018 года состоялся её полноценный релиз для Windows и macOS. Версии дл",
+      "price": "2000.00",
+      "quantity": 2,
+      "developer": 2,
+      "publisher": 2,
+      "release_date": "2014-02-08",
+      "age_limit": "Информация, запрещённая для распространения среди детей",
+      "ready": true,
+      "genres": [
+        5,
+        1,
+        4
+      ],
+      "tags": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 5,
+    "fields": {
+      "name": "Warcraft Reforged",
+      "slug": "warcraft-reforged",
+      "main_image": "warcraft.png",
+      "description": "Компьютерная игра в жанре стратегии в реальном времени, разработанная Blizzard Entertainment и Lemon Sky Studios и выпущенная Blizzard Entertainment в 2020 году. Warcraft III: Reforged представляет собой обновлённую версию Warcraft III: Reign of Chaos и дополнения к ней The Frozen Throne.",
+      "price": "2000.00",
+      "quantity": 10,
+      "developer": 3,
+      "publisher": 3,
+      "release_date": "2020-01-28",
+      "age_limit": "Информационная продукция для детей, достигших возраста двенадцати лет",
+      "ready": true,
+      "genres": [
+        6
+      ],
+      "tags": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 7,
+    "fields": {
+      "name": "The Last of Us Remastered",
+      "slug": "the-last-of-us-remastered",
+      "main_image": "274px-The_Last_of_Us_Remastered.png",
+      "description": "Перевыпуск игры The Last of Us для PlayStation 4. Новая версия включает в себя модели персонажей более высокого качества, улучшенные тени и освещение, а также несколько других улучшений в игровом процессе. Действие игры происходит спустя двадцать лет после начала поразившей человечество эпидемии. Главный герой сопровождает храбрую четырнадцатилетнюю девочку Элли. На пути к своей цели им придётся действовать сообща, избегая многочисленных врагов и опасных существ.",
+      "price": "3000.00",
+      "quantity": 10,
+      "developer": 4,
+      "publisher": 4,
+      "release_date": "2014-06-29",
+      "age_limit": "Информация, запрещённая для распространения среди детей",
+      "ready": true,
+      "genres": [
+        1,
+        3,
+        4
+      ],
+      "tags": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "games.gameimage",
+    "pk": 2,
+    "fields": {
+      "product": 1,
+      "image": "sh_1145197_1.jpeg"
+    }
+  },
+  {
+    "model": "games.gameimage",
+    "pk": 3,
+    "fields": {
+      "product": 1,
+      "image": "sh_1145197_2.jpeg"
+    }
+  },
+  {
+    "model": "games.gameimage",
+    "pk": 4,
+    "fields": {
+      "product": 1,
+      "image": "logo.png"
+    }
+  },
+  {
+    "model": "games.gameimage",
+    "pk": 8,
+    "fields": {
+      "product": 4,
+      "image": "rst_FeRs517.jpeg"
+    }
+  },
+  {
+    "model": "games.gameimage",
+    "pk": 9,
+    "fields": {
+      "product": 4,
+      "image": "rust_2.jpeg"
+    }
+  },
+  {
+    "model": "games.gameimage",
+    "pk": 10,
+    "fields": {
+      "product": 2,
+      "image": "black_2.jpeg"
+    }
+  },
+  {
+    "model": "games.gameimage",
+    "pk": 11,
+    "fields": {
+      "product": 2,
+      "image": "black_2_1.jpeg"
+    }
+  },
+  {
+    "model": "games.gameimage",
+    "pk": 12,
+    "fields": {
+      "product": 5,
+      "image": "warcraft2.png"
+    }
+  },
+  {
+    "model": "games.gameimage",
+    "pk": 13,
+    "fields": {
+      "product": 5,
+      "image": "warcraf1.jpeg"
+    }
+  },
+  {
+    "model": "games.gameimage",
+    "pk": 14,
+    "fields": {
+      "product": 7,
+      "image": "lf_1.jpeg"
+    }
+  }
+]
