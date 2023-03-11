@@ -23,7 +23,7 @@ class GameListView(CommonContextMixin, ListView):
     """Получение нефильтрованного(светлого) списка"""
     # https://morioh.com/p/13fad7aa6083
     model = Game
-    queryset = Game.objects.filter(ready=True)
+    # queryset = Game.objects.filter(ready=True)
     title = 'Каталог'
     template_name = 'games/catalog.html'
     paginate_by = PAGE_SIZE

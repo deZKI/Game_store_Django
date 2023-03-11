@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'Game_store_Django.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "Game_store_Db",
-        "USER": "store_username",
-        "PASSWORD": "301522080595kL",
-        "HOST": "localhost",
-        "PORT": "5431",
+        "NAME": os.getenv('db_Name'),
+        "USER": os.getenv('db_User'),
+        "PASSWORD": os.getenv('db_Password'),
+        "HOST": os.getenv('db_Host'),
+        "PORT": os.getenv('db_Port'),
     }
 }
 
@@ -148,4 +148,4 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
 
-PAGE_SIZE = 2
+PAGE_SIZE = 5

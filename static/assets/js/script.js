@@ -1,6 +1,12 @@
 const ajax_filter = document.querySelector('form[name=filter]')
+const slider = document.querySelector('.price-slider')
+let slider_value = document.querySelector('.filter-price-text')
 let param_form = ''
 
+slider.addEventListener('input', function (e){
+    slider_value.innerHTML = `Цена <= ${slider.value} руб.`
+
+})
 function ajaxSend(url) {
     fetch(url, {
         method: 'GET',
@@ -16,6 +22,7 @@ function ajaxSend(url) {
 function ajaxPagination(press_value) {
     let url = this.form.action
     url = `${url}?${param_form}page=${press_value}`
+    history.pushState(null, null, `?${param_form}page=${press_value}`)
     ajaxSend(url)
 }
 
@@ -33,13 +40,14 @@ ajax_filter.addEventListener('submit', function (e) {
         param_form = key + '=' + params.getAll(key).join(',') + '&' + param_form
     }
     url = `${url}?${param_form}`
+    history.pushState(null, null, `?${param_form}`)
     ajaxSend(url)
 });
 
 function render(data) {
     // Рендер шаблона
     const divgames = document.querySelector('.col-lg-9>.row')
-    const divpagen = document.querySelector('.col-lg-9>.toolbox-pagination')
+    const divpagen = document.querySelector('.toolbox>.pagination')
 
     if (data.games.length === 0) {
         divgames.innerHTML = '<h2>Игр нет, попробуйте поменять параметры поиска</h2>'
@@ -48,8 +56,13 @@ function render(data) {
         let game_list_h = Hogan.compile(htmlGames)
         let game_list = game_list_h.render(data)
         divgames.innerHTML = game_list
-
-
+        let pagination = ''
+        for (let i = 1; i <= data.page_count; i++) {
+            pagination = pagination + `<li class="page-item">
+                                            <button type="button" class="page-link" onclick="ajaxPagination.call(this, ${i})">  ${i} </button>
+                                        </li>`
+        }
+        divpagen.innerHTML = pagination
     }
 }
 
@@ -81,4 +94,3 @@ let htmlGames = '\
      </div>\
 {{/games}}'
 
-let htmlPagin = '<li class="page-item"  value="?page={{ page }}"><button class="page-link">{{ page }}</button></li>'
